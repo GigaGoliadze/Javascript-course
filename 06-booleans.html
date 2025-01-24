@@ -7,6 +7,7 @@
   <body>
     
     <script>
+      //boolean values
       /*
       true
       false
@@ -34,12 +35,43 @@
         */
       //logical  operators
       //and operator
-        console.log(true && false);
+
+       /* console.log(true && false);
         console.log(0.2 >= 0 && 0.2 < 1 / 3);
         //or operator
         console.log(true || false);
         //Not operator
-        console.log(!false);
+        console.log(!false); */
+      /*
+      if (0) {
+        console.log('truthy');
+      }
+
+      const cartQuantity = 5;
+      if (cartQuantity) {
+        console.log('cart has products');
+      }
+
+      console.log(!0);
+
+      console.log('text' / 5);
+
+      const variable1 = undefined;
+      console.log(variable1); */
+
+      //shortcut to ternary operator ?
+      const result = 0 ? 'truthy' : 'falsy'
+      console.log(result);
+
+      //shortcut to guard operator
+      false && console.log('hello');
+
+      const message = 5 && 'hello';
+      console.log(message);
+
+      //shortcut to default operator 
+      const currency = undefined || 'USD';
+      console.log(currency);
     </script>
   </body>
 </html>
