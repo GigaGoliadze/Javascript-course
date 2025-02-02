@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>exercise 8</title>
+  </head>
+  <body>
+    <script>
+     /* 8a-b-c
+     const basketball = {
+        name: 'basketball',
+        price: 2095,
+        'delivery-time': '3 days'
+      };
+
+      basketball.price += 500;
+
+      console.log(basketball); */
+
+      //8d exercise
+      function comparePrice (basketball, football) {
+        if (basketball.price > football.price) {
+          return football;
+        } else {
+          return basketball;
+        }
+      }
+
+      const basketball = {
+        name: 'basketball',
+        price: 2095
+        
+      };
+
+      const football = {
+        name: 'football',
+        price: 1800
+       };
+      
+    
+       console.log(comparePrice(basketball, football));
+
+       basketball.price -= 500
+       console.log(comparePrice(basketball, football));
+
+    </script>
+  </body>
+</html>
