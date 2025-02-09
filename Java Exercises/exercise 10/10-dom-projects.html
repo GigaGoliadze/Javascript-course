@@ -26,7 +26,16 @@
     
       .cost-input {
         font-size: 15px;
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
+      }
+
+      .calculate-button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 15px;
+        cursor: pointer;
       }
     </style>
       
@@ -43,7 +52,7 @@
     ">
     <button onclick="
       calculateTotal();
-    ">Calculate</button>
+    " class="calculate-button">Calculate</button>
     <p class="js-total-cost"></p>
 
     <script>

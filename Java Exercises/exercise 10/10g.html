@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>10g</title>
+    <style>
+      .gaming-button {
+        font-family: arial;
+        padding: 10px 15px;
+        background-color: rgb(198, 192, 192);
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+      }
+
+      .is-toggled {
+        background-color: black;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="js-button gaming-button" onclick="
+      toggleButton('.js-button');
+    ">Gaming</button>
+
+    <button class="js-button2 gaming-button" onclick="
+      toggleButton('.js-button2');
+    ">Music</button>
+
+    <button class="js-button3 gaming-button" onclick="
+       toggleButton('.js-button3');
+    ">tech</button>
+
+    <script>
+      function toggleButton(selector) {
+        const button = document.querySelector(selector);
+          if (!button.classList.contains('is-toggled')) {
+          // Before turning this button ON, check if there's
+          // already a button that's turned ON and turn it OFF.
+            turnOffPreviousButton();
+            button.classList.add('is-toggled');
+          } else {
+          button.classList.remove('is-toggled');
+        }
+      }
+     
+      function turnOffPreviousButton() {
+        const previousButton = document.querySelector('.is-toggled');
+        if (previousButton) {
+          previousButton.classList.remove('is-toggled');
+        }
+      }
+    </script>
+  </body>
+</html>
